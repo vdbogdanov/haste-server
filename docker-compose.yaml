@@ -2,6 +2,7 @@ services:
 
   haste-server:
     build: .
+    container_name: haste-server
     restart: always
     environment:
       - STORAGE_TYPE=memcached
