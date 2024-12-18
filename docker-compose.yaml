@@ -1,5 +1,4 @@
 services:
-
   haste-server:
     build: .
     restart: always
@@ -9,7 +8,6 @@ services:
       - STORAGE_PORT=11211
     ports:
       - "7777:7777"
-
   memcached:
     image: memcached:latest
     restart: always
